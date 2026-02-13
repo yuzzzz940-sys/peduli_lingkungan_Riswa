@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yayasan Hijau Lestari - Tugas IPAS</title>
+
+<style>
+:root{
+    --hijau:#27ae60;
+    --gelap:#2c3e50;
+    --abu:#f4f7f6;
+}
+body{font-family:'Times New Roman',serif;margin:0;background:var(--abu)}
+nav{background:var(--gelap);padding:15px;text-align:center;position:sticky;top:0}
+nav button{background:var(--hijau);border:none;color:white;padding:10px 20px;border-radius:5px;font-weight:bold;margin:0 5px}
+header{background:#1e272e;color:white;text-align:center;padding:40px}
+.container{max-width:900px;margin:20px auto}
+.halaman{display:none;background:white;padding:30px;border-radius:10px}
+.aktif{display:block}
+.judul-artikel{text-align:center;border-bottom:3px double black;margin-bottom:10px}
+.penulis{text-align:center;font-style:italic;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.kartu{background:#eee;border-radius:10px;overflow:hidden;cursor:pointer;text-align:center;border-bottom:4px solid var(--hijau)}
+.kartu img{width:100%;height:150px;object-fit:cover}
+.box-foto{text-align:center;margin:20px;border:1px solid #ccc;padding:10px}
+.isi-teks{text-align:justify;line-height:1.8;font-size:17px}
+.solusi{background:#e8f6ef;border-left:8px solid var(--hijau);padding:20px;margin-top:20px}
+</style>
+</head>
+
+<body>
+
+<nav>
+<button onclick="pindah('beranda')">BERANDA</button>
+<button onclick="pindah('menu')">ARTIKEL</button>
+</nav>
+
+<header>
+<h1>Laporan Observasi Lingkungan - Ujian Praktik IPAS</h1>
+<p>Muhamad Riswan 12 PPL 1</p>
+</header>
+
+<div class="container">
+
+<!-- BERANDA -->
+<div id="beranda" class="halaman aktif">
+<div class="judul-artikel"><h2>Visi & Misi</h2></div>
+<p>Website ini berisi hasil pengamatan nyata mengenai pencemaran air, tanah, dan udara di lingkungan sekitar.</p>
+</div>
+
+<!-- MENU -->
+<div id="menu" class="halaman">
+<div class="judul-artikel"><h2>Daftar Laporan Observasi</h2></div>
+
+<div class="grid">
+<div class="kartu" onclick="pindah('air')">
+<img src="air.jpg">
+<h3>Pencemaran Air</h3>
+<p>selokan tercemar akibat sampah.</p>
+</div>
+
+<div class="kartu" onclick="pindah('tanah')">
+<img src="tanah.jpg">
+<h3>Pencemaran Tanah</h3>
+<p>Tanah rusak oleh limbah plastik.</p>
+</div>
+
+<div class="kartu" onclick="pindah('udara')">
+<img src="udara.jpg">
+<h3>Pencemaran Udara</h3>
+<p>polusi udara akibat kendaraan.</p>
+</div>
+</div>
+</div>
+
+<!-- AIR -->
+<div id="air" class="halaman">
+<button onclick="pindah('menu')">← Kembali</button>
+<div class="judul-artikel"><h1>Tragedi Pencemaran Air selokan</h1></div>
+<div class="penulis">Penulis: <b>Muhamad Riswan</b></div>
+
+<div class="box-foto">
+<img src="air.jpg" width="100%">
+<p>Dokumentasi 1:Foto ini mendokumentasikan sebuah potret nyata pencemaran air skala kecil yang sering luput dari perhatian, namun berdampak besar bagi lingkungan sekitar. Gambar tersebut memperlihatkan sebuah selokan sempit yang dialiri air keruh, diapit oleh batu-batu dan tumbuhan liar yang tumbuh di sekitarnya. Di antara aliran air yang seharusnya mengalir bebas, tampak tumpukan sampah plastik tersangkut dan menumpuk, menghambat aliran serta mencemari ekosistem mikro di dalamnya.
+
+Di bagian tengah foto terlihat kantong plastik transparan berisi kemasan bekas dan sisa sampah rumah tangga. Plastik tersebut tersangkut di antara bebatuan dan akar tanaman, sehingga air yang mengalir membawa kotoran lain dan semakin memperparah kondisi penyumbatan. Di dalam selokan juga terlihat berbagai potongan kemasan plastik kecil, botol atau wadah sekali pakai, serta serpihan sampah lain yang mengendap di dasar saluran. Air yang semula jernih berubah menjadi keruh dan tampak tidak sehat, menandakan adanya akumulasi limbah organik dan anorganik.
+
+Kehadiran sampah plastik di dalam selokan seperti ini merupakan salah satu bentuk pencemaran air yang paling umum terjadi di kawasan permukiman. Sampah rumah tangga yang tidak dikelola dengan baik sering kali dibuang sembarangan ke parit atau saluran air, baik secara sengaja maupun karena terbawa aliran air hujan. Plastik sebagai material yang sulit terurai dapat bertahan selama puluhan hingga ratusan tahun di lingkungan, sehingga dampaknya tidak hanya bersifat sementara, melainkan jangka panjang.
+
+Secara ekologis, kondisi seperti yang tergambar dalam foto dapat mengganggu keseimbangan lingkungan. Selokan dan parit kecil sebenarnya memiliki peran penting dalam sistem drainase alami. Selain mengalirkan air hujan, saluran ini juga menjadi habitat bagi berbagai organisme kecil seperti serangga air, cacing, dan mikroorganisme. Ketika sampah menumpuk, kadar oksigen terlarut dalam air dapat menurun akibat proses pembusukan bahan organik. Hal ini dapat memicu pertumbuhan bakteri patogen serta menimbulkan bau tidak sedap. Dalam jangka panjang, pencemaran ini berpotensi menyebar ke badan air yang lebih besar seperti sungai dan danau.
+
+Dari sisi kesehatan masyarakat, air yang tercemar oleh sampah dan limbah dapat menjadi tempat berkembang biaknya nyamuk dan organisme pembawa penyakit lainnya. Penyumbatan aliran juga meningkatkan risiko genangan air saat hujan deras, yang dapat menyebabkan banjir lokal. Banjir yang terjadi akibat saluran tersumbat bukan hanya merusak infrastruktur, tetapi juga dapat membawa kembali limbah ke permukiman warga.
+
+Foto ini juga merefleksikan persoalan perilaku dan kesadaran lingkungan. Sampah yang terlihat kemungkinan besar berasal dari aktivitas konsumsi sehari-hari, seperti kemasan makanan dan minuman. Hal ini menunjukkan bahwa permasalahan pencemaran air tidak selalu bersumber dari industri besar, tetapi juga dari kebiasaan individu yang kurang peduli terhadap pengelolaan sampah. Minimnya fasilitas pengelolaan sampah, kurangnya edukasi, serta rendahnya penegakan aturan turut memperparah kondisi tersebut.
+
+Secara visual, kontras antara tumbuhan hijau yang tumbuh di sekitar selokan dengan sampah plastik yang mencolok menegaskan ironi antara alam dan limbah buatan manusia. Tumbuhan liar masih berusaha bertahan di lingkungan yang tercemar, sementara plastik tetap menjadi elemen asing yang mengganggu harmoni ekosistem.
+
+Dokumentasi foto ini dapat menjadi bahan refleksi sekaligus bukti nyata perlunya tindakan preventif dan korektif. Upaya seperti pengurangan penggunaan plastik sekali pakai, pemilahan dan daur ulang sampah, serta kerja bakti membersihkan saluran air secara berkala dapat menjadi langkah awal yang sederhana namun berdampak signifikan. Selain itu, edukasi lingkungan sejak dini dan partisipasi aktif masyarakat sangat penting dalam mencegah pencemaran serupa.
+
+Dengan demikian, foto ini bukan sekadar gambar selokan kotor, melainkan representasi nyata dari persoalan pencemaran air yang terjadi di sekitar kita. Ia mengingatkan bahwa tindakan kecil yang diabaikan dapat menimbulkan dampak besar bagi lingkungan dan kesehatan manusia.</p>
+</div>
+
+<div class="isi-teks">
+<p><b>HASIL PENGAMATAN:</b> selokan dipenuhi sampah akibat kebiasaan membuang sampah sembarangan.</p>
+
+<div class="solusi">
+<b>SOLUSI & AJAKAN:</b> Mari kita jaga selokan dengan tidak membuang sampah ke aliran air.
+</div>
+</div>
+</div>
+
+<!-- TANAH -->
+<div id="tanah" class="halaman">
+<button onclick="pindah('menu')">← Kembali</button>
+<div class="judul-artikel"><h1>Dampak Limbah plastik terhadap Tanah</h1></div>
+<div class="penulis">Penulis: <b>Muhamad Riswan</b></div>
+
+<div class="box-foto">
+<img src="tanah.jpg" width="100%">
+<p>Dokumentasi 2:Foto ini mendokumentasikan sebuah peristiwa pencemaran tanah yang terjadi di area terbuka dekat permukiman warga. Dalam gambar terlihat tumpukan besar kantong sampah plastik berwarna hitam dan merah yang dibuang begitu saja di atas permukaan tanah. Sampah-sampah tersebut diletakkan di tepi jalan tanah, berdekatan dengan semak-semak hijau dan lahan terbuka yang masih ditumbuhi vegetasi alami. Di latar belakang, tampak rumah-rumah penduduk serta pepohonan, menunjukkan bahwa lokasi ini berada tidak jauh dari kawasan hunian masyarakat.
+
+Tumpukan sampah terlihat tidak teratur dan sebagian sudah robek, memperlihatkan isi berupa kemasan plastik, kardus, sisa makanan, dan limbah rumah tangga lainnya. Keberadaan berbagai jenis limbah dalam satu tempat tanpa pengelolaan yang baik menjadi indikator lemahnya sistem pengelolaan sampah di wilayah tersebut. Sampah yang seharusnya dikumpulkan dan diolah melalui sistem yang terorganisir justru dibiarkan menumpuk di ruang terbuka, sehingga mencemari tanah secara langsung.
+
+Pencemaran tanah terjadi ketika bahan-bahan berbahaya atau limbah padat masuk ke dalam tanah dan mengubah komposisi alaminya. Dalam foto ini, kantong plastik yang mendominasi tumpukan sampah menjadi ancaman utama karena sifatnya yang sulit terurai. Plastik dapat membutuhkan waktu puluhan hingga ratusan tahun untuk terdegradasi secara alami. Selama proses tersebut, plastik dapat pecah menjadi partikel-partikel kecil (mikroplastik) yang kemudian meresap ke dalam tanah dan berpotensi mencemari air tanah.
+
+Selain plastik, limbah organik seperti sisa makanan yang mungkin terdapat di dalam kantong sampah dapat mengalami pembusukan. Proses pembusukan ini menghasilkan cairan lindi (leachate), yaitu cairan hasil dekomposisi yang dapat meresap ke dalam tanah. Lindi sering kali mengandung zat berbahaya, bakteri patogen, dan senyawa kimia yang dapat menurunkan kualitas tanah. Jika tidak ditangani, cairan ini dapat mencemari sumber air tanah yang digunakan masyarakat untuk kebutuhan sehari-hari.
+
+Secara ekologis, pencemaran tanah berdampak langsung pada organisme yang hidup di dalamnya, seperti cacing tanah, serangga, dan mikroorganisme. Organisme-organisme ini memiliki peran penting dalam menjaga kesuburan tanah melalui proses penguraian bahan organik dan sirkulasi nutrisi. Ketika tanah tercemar oleh limbah anorganik dan zat berbahaya, keseimbangan ekosistem tanah dapat terganggu. Tanah menjadi kurang subur dan tidak lagi mampu mendukung pertumbuhan tanaman secara optimal.
+
+Foto ini juga memperlihatkan kontras antara tumpukan sampah dengan vegetasi hijau di sekitarnya. Tanaman yang tumbuh subur menunjukkan bahwa tanah di area tersebut sebenarnya memiliki potensi ekologis yang baik. Namun, keberadaan sampah dalam jumlah besar berpotensi merusak kualitas lingkungan secara bertahap. Jika praktik pembuangan sampah sembarangan terus berlangsung, lahan yang semula produktif dapat berubah menjadi area kumuh dan tercemar.
+
+Dari perspektif kesehatan masyarakat, tumpukan sampah terbuka seperti ini berisiko menjadi tempat berkembang biaknya lalat, tikus, dan hewan pembawa penyakit lainnya. Bau tidak sedap akibat pembusukan juga dapat mengganggu kenyamanan warga sekitar. Dalam jangka panjang, pencemaran tanah dapat berdampak pada kualitas hidup masyarakat, baik dari sisi kesehatan maupun estetika lingkungan.
+
+Dokumentasi foto ini menjadi bukti nyata bahwa pencemaran tanah bukan hanya persoalan industri besar, tetapi juga berkaitan erat dengan perilaku dan kesadaran individu maupun komunitas. Pembuangan sampah sembarangan mencerminkan kurangnya kepedulian terhadap dampak lingkungan yang ditimbulkan. Selain itu, kemungkinan keterbatasan fasilitas pengelolaan sampah seperti tempat pembuangan sementara atau layanan pengangkutan rutin juga dapat menjadi faktor penyebab.
+
+Upaya pencegahan pencemaran tanah harus dilakukan secara terpadu, mulai dari pengurangan penggunaan plastik sekali pakai, pemilahan sampah organik dan anorganik, hingga peningkatan sistem pengelolaan sampah berbasis masyarakat. Edukasi lingkungan dan penegakan aturan terkait pembuangan sampah juga sangat penting untuk menciptakan perubahan perilaku yang berkelanjutan.
+
+Dengan demikian, foto ini tidak sekadar menampilkan tumpukan sampah di pinggir jalan, melainkan menggambarkan persoalan serius mengenai pencemaran tanah yang dapat berdampak luas bagi lingkungan dan kehidupan manusia. Dokumentasi ini diharapkan mampu menjadi pengingat sekaligus dorongan untuk meningkatkan kesadaran dan tindakan nyata dalam menjaga kebersihan serta kelestarian lingkungan..</p>
+</div>
+
+<div class="isi-teks">
+<p><b>HASIL PENGAMATAN:</b> Sampah plastik mengurangi kesuburan tanah.</p>
+
+<div class="solusi">
+<b>SOLUSI & AJAKAN:</b> Kurangi plastik dan buang sampah pada tempatnya.
+</div>
+</div>
+</div>
+
+<!-- UDARA -->
+<div id="udara" class="halaman">
+<button onclick="pindah('menu')">← Kembali</button>
+<div class="judul-artikel"><h1>Polusi Udara akibat kendaraan</h1></div>
+<div class="penulis">Penulis: <b>Muhamad Riswan</b></div>
+
+<div class="box-foto">
+<img src="udara.jpg" width="100%">
+<p>Dokumentasi 3:Foto ini mendokumentasikan kondisi lalu lintas di sebuah persimpangan kawasan perkotaan yang padat aktivitas. Dalam gambar terlihat sejumlah sepeda motor dan sebuah truk besar bergerak di jalan raya, dikelilingi bangunan pertokoan serta jaringan kabel listrik yang membentang di udara. Langit tampak berawan dengan cahaya matahari yang tertutup awan tipis, menciptakan suasana yang sedikit redup. Aktivitas kendaraan yang ramai di lokasi ini menggambarkan dinamika kehidupan kota sekaligus menjadi representasi nyata potensi pencemaran udara akibat emisi transportasi.
+
+Kendaraan bermotor mendominasi pemandangan pada foto tersebut. Beberapa pengendara sepeda motor mengenakan helm dan membawa penumpang, sementara di sisi kiri terlihat sebuah truk besar yang kemungkinan menggunakan bahan bakar solar. Setiap kendaraan bermotor berbahan bakar fosil menghasilkan emisi gas buang seperti karbon monoksida (CO), karbon dioksida (CO₂), nitrogen oksida (NOx), hidrokarbon, serta partikel halus (PM2.5 dan PM10). Dalam kondisi lalu lintas padat, emisi ini terakumulasi di udara dan berkontribusi pada penurunan kualitas udara di sekitarnya.
+
+Persimpangan jalan seperti yang terlihat dalam foto sering menjadi titik konsentrasi polusi udara tertinggi. Ketika kendaraan berhenti dan kembali melaju secara berulang, proses pembakaran bahan bakar menjadi kurang efisien sehingga menghasilkan lebih banyak emisi. Asap knalpot yang dikeluarkan secara terus-menerus dapat membentuk lapisan polutan di udara, terutama jika sirkulasi angin terbatas. Meskipun pada foto tidak tampak asap tebal secara kasat mata, pencemaran udara sering kali bersifat tidak terlihat (invisible pollution) namun tetap berbahaya bagi kesehatan.
+
+Keberadaan bangunan di sekitar jalan memperlihatkan bahwa aktivitas transportasi berlangsung sangat dekat dengan area komersial dan permukiman. Artinya, masyarakat yang tinggal, bekerja, atau beraktivitas di kawasan tersebut berpotensi terpapar polusi udara setiap hari. Paparan jangka panjang terhadap polutan dari kendaraan bermotor dapat meningkatkan risiko gangguan pernapasan seperti asma, bronkitis, dan penyakit paru obstruktif kronis (PPOK). Selain itu, partikel halus PM2.5 yang berukuran sangat kecil dapat masuk ke dalam aliran darah dan memicu gangguan kardiovaskular.
+
+Foto ini juga memperlihatkan dominasi kendaraan pribadi dibandingkan transportasi umum massal. Ketergantungan pada sepeda motor sebagai sarana mobilitas utama merupakan fenomena umum di banyak kota berkembang. Walaupun sepeda motor lebih hemat bahan bakar dibandingkan mobil, jumlahnya yang sangat banyak dapat menghasilkan emisi kumulatif yang signifikan. Ditambah lagi, jika kendaraan tidak dirawat dengan baik atau tidak memenuhi standar emisi, tingkat polusi yang dihasilkan akan semakin tinggi.
+
+Dari sudut pandang lingkungan, pencemaran udara tidak hanya berdampak pada kesehatan manusia, tetapi juga pada perubahan iklim. Emisi karbon dioksida sebagai gas rumah kaca berkontribusi terhadap pemanasan global. Aktivitas transportasi perkotaan menjadi salah satu penyumbang utama emisi gas rumah kaca di banyak negara. Oleh karena itu, kondisi lalu lintas seperti yang tergambar dalam foto mencerminkan tantangan besar dalam pengelolaan kualitas udara perkotaan.
+
+Secara visual, jaringan kabel listrik yang semrawut di atas jalan memperkuat kesan kepadatan dan kompleksitas infrastruktur kota. Kombinasi antara lalu lintas padat, bangunan komersial, dan minimnya ruang terbuka hijau dapat memperburuk kualitas udara. Pepohonan yang terlihat di sisi kiri foto memberikan sedikit elemen alami, namun jumlahnya terbatas dibandingkan luas area jalan dan bangunan. Padahal, vegetasi berperan penting dalam menyerap karbon dioksida dan membantu menyaring partikel polutan dari udara.
+
+Dokumentasi foto ini dapat menjadi bahan refleksi tentang pentingnya pengendalian emisi kendaraan bermotor. Upaya seperti peningkatan transportasi umum ramah lingkungan, penggunaan kendaraan listrik, uji emisi berkala, serta penghijauan kota merupakan langkah-langkah strategis untuk mengurangi pencemaran udara. Selain itu, kesadaran individu untuk menggunakan transportasi secara bijak, seperti berbagi kendaraan (carpooling) atau berjalan kaki untuk jarak dekat, juga berkontribusi dalam menekan tingkat polusi.
+
+Dengan demikian, foto ini bukan sekadar potret aktivitas lalu lintas biasa, melainkan gambaran nyata tantangan pencemaran udara di kawasan perkotaan. Ia mengingatkan bahwa mobilitas modern membawa konsekuensi lingkungan yang harus dikelola secara serius demi menjaga kualitas udara dan kesehatan masyarakat secara berkelanjutan. </p>
+</div>
+
+<div class="isi-teks">
+<p><b>HASIL PENGAMATAN:</b> Hasil Pengamatan:
+Foto menunjukkan kondisi lalu lintas yang padat di kawasan perkotaan dengan dominasi sepeda motor dan kendaraan besar seperti truk. Aktivitas kendaraan bermotor yang tinggi berpotensi menghasilkan emisi gas buang seperti karbon monoksida dan partikel halus yang dapat mencemari udara. Minimnya ruang terbuka hijau di sekitar jalan juga dapat memperburuk kualitas udara karena kurangnya vegetasi penyerap polutan..</p>
+
+<div class="solusi">
+<b>SOLUSI & AJAKAN:</b> Untuk mengurangi pencemaran udara, diperlukan upaya bersama seperti menggunakan transportasi umum, beralih ke kendaraan ramah lingkungan, melakukan uji emisi secara rutin, serta mengurangi penggunaan kendaraan pribadi untuk jarak dekat. Selain itu, penanaman pohon di kawasan perkotaan perlu ditingkatkan. Mari bersama-sama menjaga kualitas udara dengan memilih pola transportasi yang lebih bijak dan peduli terhadap lingkungan demi kesehatan kita dan generasi mendatang..
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+function pindah(id){
+let h=document.getElementsByClassName("halaman");
+for(let i=0;i<h.length;i++){h[i].classList.remove("aktif")}
+document.getElementById(id).classList.add("aktif");
+window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
